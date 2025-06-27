@@ -6,8 +6,8 @@ from google.adk.models.lite_llm import LiteLlm
 
 # https://docs.litellm.ai/docs/providers/openrouter
 model = LiteLlm(
-    model="openrouter/openai/gpt-4.1",
-    api_key=os.getenv("OPENROUTER_API_KEY"),
+    model="groq/llama3-70b-8192",
+    api_key=os.getenv("GROQ_API_KEY"),
 )
 
 
