@@ -1,4 +1,4 @@
-from google.adk.agents import LlmAgent
+from google.adk.agents import Agent
 from pydantic import BaseModel, Field
 
 
@@ -13,7 +13,7 @@ class EmailContent(BaseModel):
 
 
 # --- Create Email Generator Agent ---
-root_agent = LlmAgent(
+root_agent = Agent(
     name="email_agent",
     model="gemini-2.0-flash",
     instruction="""
